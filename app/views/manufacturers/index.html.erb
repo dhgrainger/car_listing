@@ -1,0 +1,6 @@
+<ul>
+<% @manufacturers.each do |maker| %>
+  <li><%= "#{maker.name} #{maker.nation}" %></li>
+  <%= link_to "Destroy #{maker.name}", maker, method: :delete %>
+<% end %>
+</ul>

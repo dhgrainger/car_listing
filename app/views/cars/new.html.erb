@@ -1,0 +1,10 @@
+<%= simple_form_for @car do |f| %>
+  <%= f.input :color %>
+  <%= f.input :year, collection: Car::YEARS%>
+  <%= f.input :mileage %>
+  <%= f.input :description %>
+  <%= f.association :manufacturer, label_method: :name %>
+  <%= f.button :submit, "Create Car" %>
+<% end %>
+
+<%= link_to "Cars", cars_path %>

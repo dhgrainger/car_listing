@@ -1,0 +1,7 @@
+<%= simple_form_for @manufacturer do |f| %>
+  <%= f.input :name %>
+  <%= f.input :nation %>
+  <%= f.button :submit, "Create Manufacturer" %>
+<% end %>
+
+<%= link_to "Manufacturers", manufacturers_path %>

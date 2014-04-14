@@ -1,0 +1,11 @@
+<ul>
+  <% @cars.each do |car| %>
+    <li><%= "#{car.color} #{car.year} #{car.mileage} "%></li>
+      <% if car.manufacturer %>
+        <li><%= "#{car.manufacturer.name}"%></li>
+      <% end %>
+      <% if car.description %>
+        <li><%= "#{car.description}" %></li>
+      <% end %>
+  <% end %>
+</ul>
